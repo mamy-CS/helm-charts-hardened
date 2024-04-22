@@ -847,7 +847,7 @@ tornjak:
     ## @extra tornjak.config.userManagement [object] UserManagement config
     userManagement:
       ## @param tornjak.config.userManagement.issuer UserManagement issuer url
-      issuer: "http://dex.dex:5556/dex"
+      issuer: "http://host.docker.internal:8080/realms/tornjak"
     # Tornjak supports 3 connection types: `http`, `tls`, and `mtls`.
     # The connections are determined based on provided configuration
     # When `tlsSecret` is created in this chart namespace, the TLS connection is started
