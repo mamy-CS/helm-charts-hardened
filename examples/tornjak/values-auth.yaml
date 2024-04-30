@@ -3,8 +3,12 @@ spire-server:
     config:
       ## @extra tornjak.config.userManagement [object] UserManagement config
       userManagement:
-        issuer: "http://keycloak:80/realms/tornjak"
-        audience: "tornjak-backend"
+        # issuer: "http://keycloak:80/realms/tornjak"
+       #  issuer: "https://keycloak-keycloak.mc-ztna-10-9d995c4a8c7c5f281ce13d5467ff6a94-0000.us-east.containers.appdomain.cloud/realms/tornjak"
+        # issuer: "http://host.docker.internal:5556/dex"
+        # issuer: "http://dex.dex:5556/dex"
+        issuer: "https://dex-dex.mc-ztna-10-9d995c4a8c7c5f281ce13d5467ff6a94-0000.us-east.containers.appdomain.cloud/dex"
+        audience: "tornjak" #tornjak-backend
         
 tornjak-frontend:
   auth:
